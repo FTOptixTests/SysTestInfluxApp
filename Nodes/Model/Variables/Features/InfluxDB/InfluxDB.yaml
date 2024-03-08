@@ -1,0 +1,25 @@
+Name: InfluxDB
+Type: FolderType
+Children:
+- Name: RecordsCount
+  Type: BaseDataVariableType
+  DataType: String
+  Value: "zzzz"
+- Name: InsertCount
+  Type: BaseDataVariableType
+  DataType: Int32
+- Name: RecordsCountOK
+  Id: g=7700678e6e8b65cfd015b0b78f9f464a
+  Type: BaseDataVariableType
+  DataType: Boolean
+- Name: EnableSelectQuery
+  Type: BaseDataVariableType
+  DataType: Boolean
+- Name: SelectRecordsOK
+  Id: g=b74baa7cada9ab839043c57d27499bf9
+  Type: BaseDataVariableType
+  DataType: Boolean
+- File: InfluxDB_Logger/InfluxDB_Logger.yaml
+- Name: HeavyInfluxDBLoggerTrigger
+  Type: BaseDataVariableType
+  DataType: Int32

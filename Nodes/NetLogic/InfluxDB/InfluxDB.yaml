@@ -1,0 +1,85 @@
+Name: InfluxDB
+Type: FolderType
+Children:
+- Name: QueryViaNetLogic
+  Id: g=edc5354d0bb4edb23f009dc819ca60a4
+  Type: NetLogic
+  Children:
+  - Name: RecordsCount
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "0"
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../../Model/Variables/Features/InfluxDB/RecordsCount"
+      Children:
+      - Name: Mode
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: InsertCount
+    Type: BaseDataVariableType
+    DataType: Int32
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../../Model/Variables/Features/InfluxDB/InsertCount"
+      Children:
+      - Name: Mode
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: RecordsCountOK
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../../Model/Variables/Features/InfluxDB/RecordsCountOK"
+      Children:
+      - Name: Mode
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: LoggerTriggerCount
+    Type: BaseDataVariableType
+    DataType: Int32
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../../Model/Variables/Features/InfluxDB/InfluxDB Logger/LoggerTrigger"
+      Children:
+      - Name: Mode
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Class: Method
+    Name: DeleteQuery
+  - Class: Method
+    Name: VerifyRecordsCount
+- Name: PopulateHeavyInfluxDB
+  Id: g=e76ff981fd7275cc5d307443d8a8f4e0
+  Type: NetLogic
+  Children:
+  - Name: HeavyInfluxDBLoggerTrigger
+    Type: BaseDataVariableType
+    DataType: Int32
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../../Model/Variables/Features/InfluxDB/HeavyInfluxDBLoggerTrigger"
+      Children:
+      - Name: Mode
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Class: Method
+    Name: DeleteQuery
+  - Class: Method
+    Name: PopulateDatabase
