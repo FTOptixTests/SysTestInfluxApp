@@ -39,7 +39,7 @@ Project:
   10:
    Uri: 'urn:FTOptix:CoreBase'
    Module: FTOptix.CoreBase
-   Version: 3.1
+   Version: 4.0
   11:
    Uri: 'urn:FTOptix:CoreBase:Net'
    Module: FTOptix.CoreBase.Net
@@ -187,7 +187,7 @@ Project:
   47:
    Uri: 'urn:FTOptix:RAEtherNetIP'
    Module: FTOptix.RAEtherNetIP
-   Version: 2.2
+   Version: 3.0
   48:
    Uri: 'urn:FTOptix:RAEtherNetIP:Net'
    Module: FTOptix.RAEtherNetIP.Net
